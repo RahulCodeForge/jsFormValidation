@@ -1,4 +1,4 @@
-
+/* 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
 
 *{
@@ -18,7 +18,7 @@
 
 body{
 
-    background-image: var(--ig-colr) url(/image.jpg);
+    background-image: var(--ig-lightcolor) url();
     background-size: 100%;
     background-repeat: no-repeat;
     font-family: var(--myfont);
@@ -32,8 +32,126 @@ body{
 
 
 .container{
-    background-color: #fff;
+    background-color: #cdf08d;
     border-radius: 10px;
     -webkit-border-radius:10px;
-    
+
+} */
+
+
+
+/* ---------------------ChatGpt----------------- */
+
+
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
+
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+}
+
+.Header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Header h1 {
+    font-size: 24px;
+    background: linear-gradient(to right, #007bff, #ff6f61);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #333;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form_control {
+    position: relative;
+}
+
+label {
+    font-size: 14px;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #007bff;
+}
+
+.fa-circle-check {
+    color: green;
+    position: absolute;
+    right: 10px;
+    top: 35px;
+    display: none;
+}
+
+.fa-circle-exclamation {
+    color: red;
+    position: absolute;
+    right: 10px;
+    top: 35px;
+    display: none;
+}
+
+small {
+    color: red;
+    font-size: 12px;
+    display: none;
+    margin-top: 5px;
+}
+
+input.error {
+    border-color: red;
+}
+
+input.success {
+    border-color: green;
+}
+
+.btn {
+    background: linear-gradient(to right, #007bff, #ff6f61);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: linear-gradient(to right, #0056b3, #e6492d);
+}
+
